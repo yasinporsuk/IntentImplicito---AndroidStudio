@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
             val context = this
             val intent = Intent(context, MainActivity2::class.java)
             intent.putExtra("nombre", nombre)
+
             this.startActivity(intent)
 
         }
