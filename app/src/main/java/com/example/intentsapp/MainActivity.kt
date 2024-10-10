@@ -24,9 +24,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun sendEmail() {
-        val recipient = binding.recipientEditText.text.toString()
-        val message = binding.messageEditText.text.toString()
-        val subject = "Asunto"
+        val recipient = binding.recipiente.text.toString()
+        val message = binding.mensaje.text.toString()
+        val subject = binding.asunto.text.toString()
 
         // Crear el URI mailto
         val emailUri = Uri.parse("mailto:${Uri.encode(recipient)}" +

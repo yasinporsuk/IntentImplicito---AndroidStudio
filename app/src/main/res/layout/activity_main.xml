@@ -6,31 +6,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="149dp">
 
         <EditText
-            android:id="@+id/recipientEditText"
+            android:id="@+id/recipiente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Destinatario"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/messageEditText"
+            android:id="@+id/asunto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Asunto"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/mensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|start"
             android:hint="Cuerpo del correo"
             android:inputType="textMultiLine"
-            android:lines="5"
-            android:gravity="top|start"/>
+            android:lines="5" />
 
         <Button
             android:id="@+id/sendButton"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Enviar Correo" />
     </LinearLayout>
